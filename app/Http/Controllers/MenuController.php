@@ -26,7 +26,7 @@ class MenuController extends Controller
             // Tambahkan kolom lainnya sesuai kebutuhan
 
             // Simpan nama gambar ke database
-            'image' => $request->file('image')->store('public/images'), // Mengunggah gambar dan menyimpan nama file
+            'image' => $request->image, // Mengunggah gambar dan menyimpan nama file
         ]);
 
         return response()->json(['message' => 'Menu berhasil ditambahkan', 'menu' => $menu]);
