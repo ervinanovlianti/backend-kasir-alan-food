@@ -11,8 +11,10 @@ Selamat datang di dokumentasi API backend aplikasi Alan Food. Dokumen ini member
 
 ## Daftar Endpoint Utama
 - GET /api/menus
-- POST /api/menus
+- POST /api/menu
 - POST /api/orders
+- PUT /api/menu/:id
+- DELETE /api/menu/:id
   
 ## 1. GET /api/menus
 Endpoint ini digunakan untuk mengambil daftar menu makanan yang tersedia.
