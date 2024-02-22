@@ -1,4 +1,4 @@
-# DOKUMENTASI BACKEND APLIKASI FOOD ALAN
+# DOKUMENTASI BACKEND APLIKASI KASIR ALAN FOOD
 
 Dokumentasi API Backend
 Selamat datang di dokumentasi API backend aplikasi Alan Food. Dokumen ini memberikan informasi tentang cara berinteraksi dengan layanan backend melalui API.
@@ -9,7 +9,7 @@ Selamat datang di dokumentasi API backend aplikasi Alan Food. Dokumen ini member
 - Server: Apache 2.4
 - Bahasa Pemrograman: PHP 7.4
 
-## Daftar Endpoint Utama
+## Endpoint
 - GET /api/menus
 - POST /api/menu
 - POST /api/orders
@@ -29,20 +29,20 @@ Endpoint ini digunakan untuk mengambil daftar menu makanan yang tersedia.
 Endpoint ini digunakan untuk menyimpan data menu baru.
 
 - Metode: POST
-- Permintaan:
+- Request:
   - Header Content-Type: application/json
   - Body JSON yang mencakup:
     - name: Nama menu baru
     - price: Harga menu baru
     - image: Upload gambar menu baru
-- Respon:
-  - Data Menu, termasuk nama, harga, dan gambar.
+- Response:
+  - Data Menu, seperti nama, harga, dan gambar.
 
 ## 3. POST /api/orders
 Endpoint ini digunakan untuk membuat pesanan baru.
 
 ### Metode: POST
-- Permintaan:
+- Request:
   - Header Content-Type: application/json
   - Body JSON yang mencakup:
     - total: Total biaya pesanan
@@ -67,6 +67,6 @@ Endpoint ini digunakan untuk membuat pesanan baru.
     }
     ```
 
-- Respon:
+- Response:
   - Data pesanan yang telah dibuat dengan ID pesanan beserta detail order items.
   
